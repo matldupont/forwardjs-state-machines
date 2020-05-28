@@ -1,13 +1,11 @@
 {
-  "name": "react-ottawa-xstate",
+  "name": "forwardjs-xstate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:kingston": "mdx-deck kingston.mdx",
-    "build:kingston": "mdx-deck build kingston.mdx",
-    "start:ottawa": "mdx-deck ottawa.mdx",
-    "build:ottawa": "mdx-deck build ottawa.mdx",
+    "start": "mdx-deck forwardjs.mdx",
+    "build": "mdx-deck build forwardjs.mdx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mat Dupont",
