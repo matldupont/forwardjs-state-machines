@@ -59,11 +59,6 @@ const addToCartMachine = (id) =>
             [cartEvents.ADD_TO_CART]: "addingToCart",
           },
         },
-        errorAddingToCart: {
-          on: {
-            [cartEvents.RETRY_ADD_TO_CART]: "addingToCart",
-          },
-        },
         addingToCart: {
           entry: "trackAddToCart",
           invoke: {
@@ -74,6 +69,11 @@ const addToCartMachine = (id) =>
             onError: {
               target: "errorAddingToCart",
             },
+          },
+        },
+        errorAddingToCart: {
+          on: {
+            [cartEvents.RETRY_ADD_TO_CART]: "addingToCart",
           },
         },
         inCart: {
